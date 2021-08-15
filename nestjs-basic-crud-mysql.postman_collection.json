@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "459d8e40-c82b-4fc1-8c78-6bf4b2145ff3",
+		"name": "nestjs-basic-crud-mysql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.54545455\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.54545455\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.54545455\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one user by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.54545455\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH one user by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lossi\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"phone\":\"+2250546060644\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE one user ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"loss\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao1@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.8998\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST user (register url)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"dao@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"],\r\n    \"location\":{\r\n        \"longitude\":\"15.54545455\",\r\n        \"latitude\":\"52.554555\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN (login url)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"d55o@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET jwt profil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MGQwNTNiOTczMWJiYjVlZWM1ZDQyNDgiLCJ1c2VybmFtZSI6Imxhc3NpbmEiLCJyb2xlTGV2ZWwiOi0xLCJpYXQiOjE2MjY2ODIxNzgsImV4cCI6MTYyNjc2ODU3OCwiaXNzIjoiaXNzdWVyIn0.Kju0gjTLlCxO89CC2LMFE01Hdf6fvV5lxzMJkrBFWvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\":\"lass\",\r\n    \"firstname\":\"lassina\",\r\n    \"lastname\":\"DAO\",\r\n    \"email\": \"d55o@mail.com\",\r\n    \"phone\":\"+2250546060606\",\r\n    \"password\": \"Testing193!\",\r\n    \"isActive\": true,\r\n    \"sports\": [\"art martial\", \"boxe\",\" foot\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout user profil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MGQwNTNiOTczMWJiYjVlZWM1ZDQyNDgiLCJ1c2VybmFtZSI6Imxhc3NpbmEiLCJyb2xlTGV2ZWwiOi0xLCJpYXQiOjE2MjY2ODIxNzgsImV4cCI6MTYyNjc2ODU3OCwiaXNzIjoiaXNzdWVyIn0.Kju0gjTLlCxO89CC2LMFE01Hdf6fvV5lxzMJkrBFWvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
